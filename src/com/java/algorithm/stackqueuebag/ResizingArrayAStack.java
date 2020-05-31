@@ -67,7 +67,6 @@ public class ResizingArrayAStack<Item> implements Iterable<Item> {
 
         @Override
         public void remove() {
-
         }
     }
 }
