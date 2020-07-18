@@ -5,5 +5,6 @@ public class ThreadTest {
         Thread t = new Thread();
         Thread.State state = t.getState();
         System.out.println(state);
+        System.out.println("刘梦后期是");
     }
 }
