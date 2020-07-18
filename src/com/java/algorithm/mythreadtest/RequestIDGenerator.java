@@ -1,5 +1,6 @@
 package com.java.algorithm.mythreadtest;
 
+import java.nio.channels.SelectableChannel;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,7 +22,7 @@ public final class RequestIDGenerator implements CircularSeqGenerator  {
      * @return
      */
     @Override
-    public short nextSequence() {
+    public synchronized  short nextSequence() {
         if(sequence>=SEQ_UPPER_LIMIT)
         {
             sequence=0;
